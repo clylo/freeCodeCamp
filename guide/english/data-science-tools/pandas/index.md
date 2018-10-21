@@ -44,11 +44,20 @@ df.tail()
 ```
 This will show the last 5 rows of the data frame.
 
+To show the 2D dimensions of the dataframe, use the 'shape' method to return a tuple:
+```python
+df.shape()
+```
 ## Subsetting: Getting a column by name
 A data frame can be subset in many ways. One of the simplest is getting a single column. For instance, if the data frame `df` contains a column named `age`, we can extract it as follows:
 ```python
 ages=df["age"]
 ```
+
+## Handling Duplicate Values
+Often times there are duplicate records in our datasets. we often want to see which records are duplicated and then to deplete them.
+
+To see duplicated values use
 
 #### More Information:
 1. [pandas](http://pandas.pydata.org/)
